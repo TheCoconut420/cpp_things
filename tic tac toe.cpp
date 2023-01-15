@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+void get_field() {
     int i = 0;
     int j = 0;
     string play_field[4][4] = {
@@ -11,7 +11,7 @@ int main() {
         {"3", " ", " ", " "},
     };
 
-    while (i <= 4) {
+    while (i <= 3) {
         while (j <= 3) {
             cout << play_field[i][j] << " ";
             j++;
@@ -21,4 +21,10 @@ int main() {
         i++;
     };
 
+}
+
+
+
+int main() {
+    get_field();
 }
